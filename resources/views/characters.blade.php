@@ -1,7 +1,9 @@
 @extends('home')
 @section('title')
-- News
+- Characters
 @endsection
+
+
 @section('content')
-    <p>news</p>
+    <p>characters</p>
 @endsection

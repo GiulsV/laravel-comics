@@ -17,7 +17,7 @@
         <div class="container-90w">
         @yield('content')
         </div>
-        <a id="load-more-btn" href="#nowhere">load more</a>
+        <a id="load-more-btn" href="#">load more</a>
     </main>
     <footer>
     </footer>    
