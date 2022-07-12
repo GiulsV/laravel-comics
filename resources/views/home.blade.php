@@ -4,27 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Laravel-Comics</title>
 </head>
 <body>
-    <header>
-        <div class="container-90w">
-            <img src="./public/images/dc-logo.png" alt="DC logo">
-            <div id="menu-container">
-                <ul>
-                    @foreach ($navlinks as $navlink) 
-                    <li>
-                        <a href="{{ $navlink['url'] }}">{{ $navlink['text'] }}</a>
-                    </li>
-                    @endforeach  
-                </ul>
-            </div>
-        </div>
-  </header>
+    @include('partials/header')
     <main>
-        <h1></h1>
-       
+        <div class="jumbotron">
+            <div id="jumbo-label"><p>current series</p></div>
+        </div>
+        <div class="container-90w">
+        @yield('content')
+        </div>
+        <a id="load-more-btn" href="#nowhere">load more</a>
     </main>
     <footer>
     </footer>    
