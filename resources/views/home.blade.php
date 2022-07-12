@@ -10,20 +10,20 @@
 <body>
     <header>
         <div class="container-90w">
-            <img src="../public/images/dc-logo.png" alt="DC logo">
+            <img src="./public/images/dc-logo.png" alt="DC logo">
             <div id="menu-container">
                 <ul>
-                @foreach ($navlinks as $navlink) 
-                <li>
-                    <a href="{{ url('/comics') }}">{{ $navlink['text'] }}</a>
-                </li>
-                @endforeach  
+                    @foreach ($navlinks as $navlink) 
+                    <li>
+                        <a href="{{ $navlink['url'] }}">{{ $navlink['text'] }}</a>
+                    </li>
+                    @endforeach  
                 </ul>
             </div>
         </div>
   </header>
     <main>
-        <h1>HOME TEST</h1>
+        <h1></h1>
        
     </main>
     <footer>
