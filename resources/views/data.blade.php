@@ -3,6 +3,27 @@
 - Comics Info
 @endsection
 @section('content')
-    <h1>DATA SINGLE COMIC</h1>
-    <a href="/comics"><p>GO BACK</p></a>
+    @foreach($comics as $key=>$comic)
+     @if ($loop->first)
+        <p> 
+            {{ $comics[$key]['title'] }}
+        </p>
+    @endif
+    @if ($loop->first)
+        <p> 
+            {{ $comics[$key]['price'] }}
+        </p>
+    @endif
+    @if ($loop->first)
+        <img src="{{ $comics[$key]['thumb'] }}" alt="">
+    @endif
+    @if ($loop->first)
+        <p> 
+            {{ $comics[$key]['description'] }}
+        </p>
+    @endif
+    
+    @endforeach
+
+    <img src="images/adv.jpg" alt="adv">
 @endsection

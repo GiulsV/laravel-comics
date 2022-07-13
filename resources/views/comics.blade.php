@@ -5,8 +5,8 @@
 @section('content')
     @foreach($comics as $comic)
         <article>
-            <a href="#nowhere"><img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}"></a>
-            <a href="#nowhere"><p>{{ $comic['series'] }}</p></a>
+            <a href="/comics/data"><img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}"></a>
+            <a href="/comics/data"><p>{{ $comic['series'] }}</p></a>
         </article> 
     @endforeach
 @endsection
